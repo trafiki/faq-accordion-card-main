@@ -1,4 +1,4 @@
-![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the FAQ accordion card coding challenge](https://res.cloudinary.com/dz209s6jk/image/upload/v1602235390/Challenges/ymtblmv8bbnpazgrfrx6.jpg)
 
 # Frontend Mentor - FAQ accordion card solution
 

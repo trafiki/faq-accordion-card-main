@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.card>* {
+  flex: 1;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.info-col ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+.info-col h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.info-col li {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.card {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  background: white;
+  padding: 7em;
+  border-radius: 20px;
+  max-width: 1100px;
+}
+
+.info-col h1 {
+  font-size: 3em;
+}
+
+li.faq-item p {
+  display: none;
+}
+
+li.faq-item.active h3 {
+  font-weight: bold;
+}
+
+li.faq-item.active p {
+  display: block;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3::after {
+  content: url(./images/icon-arrow-down.svg);
+}
+
+.active h3::after {
+  transform: rotate(180deg);
+}
