@@ -13,12 +13,6 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-.card {
-  display: flex;
-  width: 1100px;
-  margin: 0 auto;
-}
-
 .card>* {
   flex: 1;
 }
@@ -45,16 +39,29 @@ main {
 
 .card {
   display: flex;
-  width: 85%;
-  margin: 0 auto;
+  width: 80vw;
   background: white;
   padding: 7em;
   border-radius: 20px;
-  max-width: 1100px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.cube-wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+img.cube {
+  position: absolute;
+  z-index: 5;
+  top: 220px;
+  left: -92px;
 }
 
 .info-col h1 {
   font-size: 3em;
+  margin-bottom: .8em;
 }
 
 li.faq-item p {
@@ -80,4 +87,40 @@ h3::after {
 
 .active h3::after {
   transform: rotate(180deg);
+}
+
+.image-col {
+  position: relative;
+}
+
+.image-col .illustration {
+  position: absolute;
+  left: -170px;
+}
+
+img.bg-shadow {
+  position: absolute;
+  top: -360px;
+  left: -660px;
+}
+
+/* .cube-wrapper {
+  position: absolute;
+  left: 130px;
+  top: 190px;
+} */
+li.faq-item h3 {
+  padding: 1em 0;
+}
+
+li.faq-item p {
+  margin-bottom: 1em;
+}
+
+li.faq-item {
+  cursor: pointer;
+}
+
+li.faq-item:hover h3 {
+  color: hsl(14, 88%, 65%);
 }
