@@ -1,16 +1,24 @@
-let faqItem = document.querySelectorAll('li.faq-item');
+let faqList = document.querySelector('.faq-list');
+let cube = document.querySelector('img.cube');
 
-for (let i = 0; i < faqItem.length; i++) {
-  faqItem[i].addEventListener('click', () => {
-    faqItem[i].classList.toggle('active');
+faqList.addEventListener('mouseover', () => {
+  cube.style.left = "-130px";
+})
 
-  })
-}
+faqList.addEventListener('mouseout', () => {
+  cube.style.left = "-92px";
+})
 
-// let cube = document.querySelector('img.cube');
-//
-// faqItem.addEventListener('mouseover', () => {
-//   console.log('seen');
-//   alert('hovered');
-//   cube.style.left = "-130px";
-// })
+faqList.addEventListener('click', (e) => {
+  let parent = e.target.parentNode;
+  let activeItem = document.querySelector('.active');
+
+  if (!activeItem) {
+    parent.classList.add('active');
+  } else if (parent.classList.contains('active')) {
+    parent.classList.remove('active');
+  } else {
+    activeItem.classList.remove('active');
+    parent.classList.add('active');
+  }
+});
